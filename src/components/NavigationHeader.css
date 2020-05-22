@@ -1,0 +1,11 @@
+.Navigate {
+    background-color: rgb(153, 153, 199);
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Navigate h4 {
+    text-align: left;
+    padding: 10px;
+}
