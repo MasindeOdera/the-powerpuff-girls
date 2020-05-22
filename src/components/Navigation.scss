@@ -1,27 +1,26 @@
 @import "../Shared.scss";
 
-.Navigation button {
-    background-color: $primaryBackgroundColor;
-    border: 1px solid $primaryBackgroundColorHover;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    padding: 10px 14px;
-    cursor: pointer;
-    float: left;
-  }
+.Navigation {
+    button {
+        background-color: $primaryBackgroundColor;
+        border: 1px solid $primaryBackgroundColorHover;
+        font-size: calc(10px + 2vmin);
+        color: white;
+        padding: 10px 14px;
+        cursor: pointer;
+        float: left;
+    }
+    button:not(:last-child) {
+        border-right: none;
+    }
+    button:hover {
+        background-color:  $primaryBackgroundColorHover; //Add a background color on hover
+    }
+}
   
-  .Navigation button:not(:last-child) {
-    border-right: none;
-  }
-  
-  /* Clear floats (clearfix hack) */
-  .Navigation:after {
+/* Clear floats (clearfix hack) */
+.Navigation:after {
     content: "";
     clear: both;
     display: table;
-  }
-  
-  /* Add a background color on hover */
-  .Navigation button:hover {
-    background-color:  $primaryBackgroundColorHover;
-  }
+}
