@@ -1,5 +1,5 @@
 import React from 'react';
-import './PathHeader.css';
+import './PathHeader.scss';
 
 function PathHeader() {
     return (

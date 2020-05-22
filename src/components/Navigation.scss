@@ -1,5 +1,7 @@
+@import "../Shared.scss";
+
 .Navigation button {
-    background-color: rgb(153, 153, 199);
+    background-color: $primaryBackgroundColor;
     border: 1px solid rgb(118, 118, 156);
     font-size: calc(10px + 2vmin);
     color: white;
@@ -23,3 +25,4 @@
   .Navigation button:hover {
     background-color:  rgb(118, 118, 156);
   }
+  
