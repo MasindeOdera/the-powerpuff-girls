@@ -1,7 +1,7 @@
 @import "../Shared.scss";
 
 .Path {
-    background-color: rgb(153, 153, 199);
+    background-color: $primaryBackgroundColor;
     font-size: calc(10px + 2vmin);
     color: white;
     padding: 4px;
