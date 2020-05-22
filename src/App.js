@@ -1,14 +1,16 @@
 import React from 'react';
-import NavigationHeader from './components/NavigationHeader';
+import PathHeader from './components/PathHeader';
+import Navigation from './components/Navigation';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <NavigationHeader />
+      <PathHeader />
       <header className="App-header">
         <h3>The Powerpuff Girls</h3>
       </header>
+      <Navigation />
     </div>
   );
 }
