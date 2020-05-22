@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "735dd3d7d1b908e497285120a4fcf5d5",
+    "revision": "6400c6a7ed6190a69cebce91769c9f09",
     "url": "/the-powerpuff-girls/index.html"
   },
   {
-    "revision": "4fbdb9b9196a3f69c282",
-    "url": "/the-powerpuff-girls/static/css/main.07073fb8.chunk.css"
+    "revision": "df96c0271c65f24e7623",
+    "url": "/the-powerpuff-girls/static/css/main.38393d3c.chunk.css"
   },
   {
     "revision": "118f681aedc44c2be02c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/the-powerpuff-girls/static/js/2.6760b9e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4fbdb9b9196a3f69c282",
-    "url": "/the-powerpuff-girls/static/js/main.0302cf4f.chunk.js"
+    "revision": "df96c0271c65f24e7623",
+    "url": "/the-powerpuff-girls/static/js/main.00c1b754.chunk.js"
   },
   {
     "revision": "f7a722fbaf6fdb23a101",
