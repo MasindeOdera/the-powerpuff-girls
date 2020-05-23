@@ -4,7 +4,7 @@ import './Navigation.scss';
 
 function Navigation() {
     const state = useSelector( (state) => state);
-    console.log(state);
+    console.log("State from Navigation: ", state);
     return (
         <div className="Navigation">
             <button><b>Main</b></button>
