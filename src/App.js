@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import PathHeader from './components/PathHeader';
 import Navigation from './components/Navigation';
+import { useSelector, useDispatch } from 'react-redux';
 import './App.scss';
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
       });
   }, []);
 
+  const counter = useSelector( (state) => state.counter );
+  const dispatch = useDispatch();
+
   return (
     <div className="App">
       <PathHeader />
@@ -20,6 +24,9 @@ function App() {
         <h3>The Powerpuff Girls</h3>
       </header>
       <Navigation />
+      <h2>Counter: {counter}</h2>
+      <button onClick={()=> dispatch({type:"INCREMENT"})}>INCREMENT</button>
+      <button onClick={()=> dispatch({type:"DECREMENT"})}>DECREMENT</button>
     </div>
   );
 }
