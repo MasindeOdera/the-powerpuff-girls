@@ -1,7 +1,8 @@
 
 const initialState = {
     counter: 0,
-    info: "Hello World!"
+    info: "Hello World!",
+    description: "Not a lot options on the horizon, but you never know...",
 }
 
 function rootReducer(state = initialState, action){
