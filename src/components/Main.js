@@ -28,7 +28,7 @@ function Main() {
         <div className="Main">
             <Item.Group>
             <Item>
-                {/* If the image returns undefined, then a placholder will be shown */}
+                {/* If the image returns undefined, then a placholder will show */}
                 <Item.Image size='small' src={image !== undefined ? image.medium : placeholder} />
                 <Item.Description>
                     {/* Using dangerouslySetInnerHTML allows me to use the tags that come with the string */}

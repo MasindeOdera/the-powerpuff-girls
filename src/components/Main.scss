@@ -6,7 +6,7 @@
     .ui.items {
         width: inherit;
         .item {
-            width: 96%;
+            display: inline-flex;
             .ui.smal.image {
                 display: inline-block;
                 margin-left: inherit;
