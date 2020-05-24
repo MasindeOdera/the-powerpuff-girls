@@ -1,31 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f5cfedad56ce6cf978934d74b81b2685",
+    "revision": "697fa08e5fb40c43ec16713b981f4b30",
     "url": "/the-powerpuff-girls/index.html"
   },
   {
-    "revision": "dcc09a1e5ecb13a28fcd",
+    "revision": "fe40d15e546c3c6a6e14",
     "url": "/the-powerpuff-girls/static/css/2.fc7d3ea1.chunk.css"
   },
   {
-    "revision": "1597bdc537b6b1155fdc",
-    "url": "/the-powerpuff-girls/static/css/main.065ee553.chunk.css"
+    "revision": "a5bcaba3bbac5425cd02",
+    "url": "/the-powerpuff-girls/static/css/main.04b1c25a.chunk.css"
   },
   {
-    "revision": "dcc09a1e5ecb13a28fcd",
-    "url": "/the-powerpuff-girls/static/js/2.adb1328f.chunk.js"
+    "revision": "fe40d15e546c3c6a6e14",
+    "url": "/the-powerpuff-girls/static/js/2.cf96991d.chunk.js"
   },
   {
     "revision": "59eee5a20441efe8cf9652b2cc007836",
-    "url": "/the-powerpuff-girls/static/js/2.adb1328f.chunk.js.LICENSE.txt"
+    "url": "/the-powerpuff-girls/static/js/2.cf96991d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1597bdc537b6b1155fdc",
-    "url": "/the-powerpuff-girls/static/js/main.5fcf3254.chunk.js"
+    "revision": "a5bcaba3bbac5425cd02",
+    "url": "/the-powerpuff-girls/static/js/main.c54e52b4.chunk.js"
   },
   {
     "revision": "f7a722fbaf6fdb23a101",
     "url": "/the-powerpuff-girls/static/js/runtime-main.29c1325a.js"
+  },
+  {
+    "revision": "0884ba3cca23f64c59c6f6c1f3d7bf27",
+    "url": "/the-powerpuff-girls/static/media/Powerpuff.0884ba3c.ttf"
+  },
+  {
+    "revision": "1c9feddb3622630d78afc78c8302eb32",
+    "url": "/the-powerpuff-girls/static/media/Powerpuff.1c9feddb.woff2"
+  },
+  {
+    "revision": "534d76888b6d500f126027cf0114e895",
+    "url": "/the-powerpuff-girls/static/media/Powerpuff.534d7688.woff"
+  },
+  {
+    "revision": "aaf5d0dd7b78defd3b4bd1fb4e0eed2c",
+    "url": "/the-powerpuff-girls/static/media/Powerpuff.aaf5d0dd.svg"
+  },
+  {
+    "revision": "ea2f78e339306f7bbf574784e34613d2",
+    "url": "/the-powerpuff-girls/static/media/Powerpuff.ea2f78e3.eot"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
