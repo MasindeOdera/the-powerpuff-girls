@@ -4,7 +4,6 @@ import Navigation from './components/Navigation';
 import Main from './components/Main';
 import { useSelector, useDispatch } from 'react-redux';
 import './App.scss';
-import './mediaQueries.css';
 
 function App() {
 

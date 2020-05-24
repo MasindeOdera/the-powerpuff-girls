@@ -4,10 +4,14 @@
     margin-top: 10px;
     width: inherit;
     .ui.items {
+        width: inherit;
         .item {
-            // .ui.smal.image {
-                
-            // }
+            width: 96%;
+            .ui.smal.image {
+                display: inline-block;
+                margin-left: inherit;
+                margin-right: inherit;
+            }
             .description {
                 padding: 0px 4px;
             }
@@ -15,9 +19,30 @@
     }
 }
 
+//Semantic-ui has some strange style for mobile screens, these changes left align the image.
 @media only screen and (max-width: 767px){
-    .ui.items.item.image {
-        margin-left: !important inherit;
-        margin-right: !important inherit;
+    .Main {
+        .ui.items{
+            width: inherit !important;
+            .item{
+                flex-direction: inherit !important;
+                .ui.small.image {
+                    display: inline-block;
+                    margin-left: inherit;
+                    margin-right: inherit;
+                    img {
+                        max-width: 200px !important;
+                        height: auto !important;
+                        max-height: 200px!important;
+                        display: inline-block !important;
+                    }
+                }
+                .description {
+                    p {
+                        width: 24%;
+                    }
+                }
+            }
+        }
     }
 }
