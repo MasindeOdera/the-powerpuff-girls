@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/the-powerpuff-girls/static/css/main.04b1c25a.chunk.css",
-    "main.js": "/the-powerpuff-girls/static/js/main.c54e52b4.chunk.js",
-    "main.js.map": "/the-powerpuff-girls/static/js/main.c54e52b4.chunk.js.map",
+    "main.css": "/the-powerpuff-girls/static/css/main.099e9d14.chunk.css",
+    "main.js": "/the-powerpuff-girls/static/js/main.048745f7.chunk.js",
+    "main.js.map": "/the-powerpuff-girls/static/js/main.048745f7.chunk.js.map",
     "runtime-main.js": "/the-powerpuff-girls/static/js/runtime-main.29c1325a.js",
     "runtime-main.js.map": "/the-powerpuff-girls/static/js/runtime-main.29c1325a.js.map",
     "static/css/2.fc7d3ea1.chunk.css": "/the-powerpuff-girls/static/css/2.fc7d3ea1.chunk.css",
-    "static/js/2.cf96991d.chunk.js": "/the-powerpuff-girls/static/js/2.cf96991d.chunk.js",
-    "static/js/2.cf96991d.chunk.js.map": "/the-powerpuff-girls/static/js/2.cf96991d.chunk.js.map",
+    "static/js/2.c5878e8f.chunk.js": "/the-powerpuff-girls/static/js/2.c5878e8f.chunk.js",
+    "static/js/2.c5878e8f.chunk.js.map": "/the-powerpuff-girls/static/js/2.c5878e8f.chunk.js.map",
     "index.html": "/the-powerpuff-girls/index.html",
-    "precache-manifest.8c31c8829e7e7035293de460ca35b246.js": "/the-powerpuff-girls/precache-manifest.8c31c8829e7e7035293de460ca35b246.js",
+    "precache-manifest.d889747b557c4339563242cda5a8fee3.js": "/the-powerpuff-girls/precache-manifest.d889747b557c4339563242cda5a8fee3.js",
     "service-worker.js": "/the-powerpuff-girls/service-worker.js",
     "static/css/2.fc7d3ea1.chunk.css.map": "/the-powerpuff-girls/static/css/2.fc7d3ea1.chunk.css.map",
-    "static/css/main.04b1c25a.chunk.css.map": "/the-powerpuff-girls/static/css/main.04b1c25a.chunk.css.map",
-    "static/js/2.cf96991d.chunk.js.LICENSE.txt": "/the-powerpuff-girls/static/js/2.cf96991d.chunk.js.LICENSE.txt",
+    "static/css/main.099e9d14.chunk.css.map": "/the-powerpuff-girls/static/css/main.099e9d14.chunk.css.map",
+    "static/js/2.c5878e8f.chunk.js.LICENSE.txt": "/the-powerpuff-girls/static/js/2.c5878e8f.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/the-powerpuff-girls/static/media/Powerpuff.ea2f78e3.eot",
     "static/media/semantic.min.css": "/the-powerpuff-girls/static/media/outline-icons.ef60a4f6.woff",
     "static/media/placeholder.png": "/the-powerpuff-girls/static/media/placeholder.d6af9c9e.png"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.29c1325a.js",
     "static/css/2.fc7d3ea1.chunk.css",
-    "static/js/2.cf96991d.chunk.js",
-    "static/css/main.04b1c25a.chunk.css",
-    "static/js/main.c54e52b4.chunk.js"
+    "static/js/2.c5878e8f.chunk.js",
+    "static/css/main.099e9d14.chunk.css",
+    "static/js/main.048745f7.chunk.js"
   ]
 }
