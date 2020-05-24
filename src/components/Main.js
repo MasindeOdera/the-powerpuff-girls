@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Item } from 'semantic-ui-react';
 import { useSelector, useDispatch} from 'react-redux';
 import placeholder from '../images/placeholder.png';
+import './Main.scss';
 
 function Main() {
     const [initialData, setInitialData] = useState('');
@@ -20,15 +21,8 @@ function Main() {
       dispatch({type:"DISPLAY", payload: initialData})
     });
 
-    // const initialData = useSelector( (state) => state.initialData);
+    // Get the image from the data.
     const image = useSelector( (state) => state.initialData.image);
-
-    console.log("State from Main.js: ", {initialData});
-    console.log(initialData.image);
-
-    if(initialData) {
-        console.log(initialData.image.medium);
-    }
 
     return (
         <div>
@@ -36,6 +30,7 @@ function Main() {
             <Item>
                 <Item.Image size='small' src={image !== undefined ? image.medium : placeholder} />
                 <Item.Description>
+                    {/* Using dangerouslySetInnerHTML allows me to use the tags that come with the string */}
                    <div dangerouslySetInnerHTML={{ __html: initialData.summary }} />
                 </Item.Description>
             </Item>
