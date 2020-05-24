@@ -25,13 +25,19 @@ function Main() {
 
     console.log("State from Main.js: ", {initialData});
     console.log(initialData.image);
-    // console.log(Object.keys(image)[0]);
+
+    if(initialData) {
+        console.log(initialData.image.medium);
+    }
+
     return (
         <div>
             <Item.Group>
             <Item>
                 <Item.Image size='small' src={image !== undefined ? image.medium : placeholder} />
-                <Item.Content header='Cute Dog' description={initialData.summary} />
+                <Item.Description>
+                   <div dangerouslySetInnerHTML={{ __html: initialData.summary }} />
+                </Item.Description>
             </Item>
             </Item.Group>
         </div>
