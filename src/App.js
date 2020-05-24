@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Main from './components/Main';
 import { useSelector, useDispatch } from 'react-redux';
 import './App.scss';
+import './mediaQueries.css';
 
 function App() {
 
@@ -14,13 +15,13 @@ function App() {
     <div className="App">
       <PathHeader />
       <header className="App-header">
-        <h3>The Powerpuff Girls</h3>
+        <h1>The Powerpuff Girls</h1>
       </header>
       <Navigation />
+      <Main />
       <h2>Counter: {counter}</h2>
       <button onClick={()=> dispatch({type:"INCREMENT"})}>INCREMENT</button>
       <button onClick={()=> dispatch({type:"DECREMENT"})}>DECREMENT</button>
-      <Main />
     </div>
   );
 }

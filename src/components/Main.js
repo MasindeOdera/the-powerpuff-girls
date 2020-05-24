@@ -25,7 +25,7 @@ function Main() {
     const image = useSelector( (state) => state.initialData.image);
 
     return (
-        <div>
+        <div className="Main">
             <Item.Group>
             <Item>
                 <Item.Image size='small' src={image !== undefined ? image.medium : placeholder} />

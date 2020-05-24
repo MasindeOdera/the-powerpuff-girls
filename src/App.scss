@@ -5,9 +5,25 @@
     justify-content: center;
     width: 900px;
     margin: auto;
+    padding: 0.5rem;
   }
+
+  @font-face {
+    font-family: 'Powerpuff';
+    src: url('./fonts/Powerpuff.eot');
+    src: url('./fonts/Powerpuff.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Powerpuff.woff2') format('woff2'),
+        url('./fonts/Powerpuff.woff') format('woff'),
+        url('./fonts/Powerpuff.ttf') format('truetype'),
+        url('./fonts/Powerpuff.svg#Powerpuff') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
   
   .App-header {
-    padding-left: 10px;
+    padding: 10px;
+    h1 {
+      font-family: 'Powerpuff';
+    }
   }
   

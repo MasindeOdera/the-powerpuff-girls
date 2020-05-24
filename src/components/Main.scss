@@ -1,12 +1,23 @@
 @import "../Shared.scss";
 
-.ui.items {
-    .item {
-        // .ui.smal.image {
-            
-        // }
-        .description {
-            padding: 0px 4px;
+.Main {
+    margin-top: 10px;
+    width: inherit;
+    .ui.items {
+        .item {
+            // .ui.smal.image {
+                
+            // }
+            .description {
+                padding: 0px 4px;
+            }
         }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .ui.items.item.image {
+        margin-left: !important inherit;
+        margin-right: !important inherit;
     }
 }
