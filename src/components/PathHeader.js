@@ -5,12 +5,14 @@ import './PathHeader.scss';
 
 function PathHeader() {
     return (
-        <div className="Path">
-        <Image src={logo} verticalAlign='middle' avatar />
-            <span>
-                <b>Home / Shows / The Powerpuff Girls</b>
-            </span>
-        </div>
+        <React.Fragment>
+            <div className="Path">
+            <Image src={logo} verticalAlign='middle' avatar />
+                <span>
+                    <b>Home / Shows / The Powerpuff Girls</b>
+                </span>
+            </div>
+        </React.Fragment>
     )
 }
 
