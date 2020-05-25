@@ -4,16 +4,16 @@ import './EpisodeList.scss';
 
 function EpisodeList() {
     const state = useSelector( (state) => state);
-    // const [season, setSeason] = useState({});
-    // const dispatch = useDispatch();
-    console.log(state);
-    // setSeason(state.list);
-    // console.log(season);
-    // if(state.initialData !== undefined){
-    //     const episodes = useSelector( (state) => state.initialData._embedded.episodes);
-    //     console.log(episodes);
-    //     setSeason(episodes);   
-    // }
+    // const [first, setFirst] = useState([]);
+    let episodes = state.list;
+    
+    if(episodes) {
+        let firstSeason = episodes.filter(function(episode) {
+            return episode.season === 1;
+        });
+        console.log(firstSeason);
+    }
+
 
     return (
         <div>

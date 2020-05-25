@@ -1,32 +1,27 @@
 
 const initialState = {
-    counter: 0,
     initialData: {},
     list: [],
+    firstSeason: [],
 }
 
 function rootReducer(state = initialState, action){
 
     switch(action.type){
-        case 'INCREMENT':
-            return {  
-                ...state,
-                counter: state.counter + 1,
-             }
-        case 'DECREMENT':
-            return { 
-                ...state,
-                counter: state.counter - 1,
-             }
         case 'DISPLAY':
             return { 
                 ...state,
                 initialData: action.payload,
              }
         case 'LIST':
-        return { 
-            ...state,
-            list: action.payload,
+            return { 
+                ...state,
+                list: action.payload,
+            }
+        case 'SEASON1':
+            return {
+                ...state,
+                firstSeason: action.payload,
             }
         default:
             return state;

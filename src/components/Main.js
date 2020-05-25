@@ -20,8 +20,11 @@ function Main() {
         });
     }, [dispatch]);
 
+
     // Get the image from the data.
     const image = useSelector( (state) => state.initialData.image);
+    // const data = useSelector( (state) => state.initialData);
+    // setInitialData(data);
 
     return (
         <div className="Main">

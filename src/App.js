@@ -3,26 +3,25 @@ import PathHeader from './components/PathHeader';
 import Navigation from './components/Navigation';
 import Main from './components/Main';
 import EpisodeList from './components/EpisodeList';
-import { useSelector, useDispatch } from 'react-redux';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import './App.scss';
 
 function App() {
 
-  const counter = useSelector( (state) => state.counter );
-  const dispatch = useDispatch();
-
   return (
     <div className="App">
-      <PathHeader />
-      <header className="App-header">
-        <h1>The Powerpuff Girls</h1>
-      </header>
-      <Navigation />
-      <Main />
-      <EpisodeList />
-      <h2>Counter: {counter}</h2>
-      <button onClick={()=> dispatch({type:"INCREMENT"})}>INCREMENT</button>
-      <button onClick={()=> dispatch({type:"DECREMENT"})}>DECREMENT</button>
+      <BrowserRouter>
+        <PathHeader />
+        <header className="App-header">
+          <h1>The Powerpuff Girls</h1>
+        </header>
+        <Navigation />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route path="/episodes" component={EpisodeList} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
