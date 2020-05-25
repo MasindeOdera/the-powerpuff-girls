@@ -18,7 +18,7 @@ function App() {
         </header>
         <Navigation />
         <Switch>
-          <Route exact path="/" component={Main} />
+          <Route path="/main" component={Main} />
           <Route path="/episodes" component={EpisodeList} />
         </Switch>
       </BrowserRouter>
