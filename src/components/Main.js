@@ -10,7 +10,7 @@ function Main() {
     //https://api.tvmaze.com/singlesearch/shows?q=the-powerpuff-girls
 
     useEffect(() => {
-      fetch('http://api.tvmaze.com/shows/6771?embed=episodes')
+      fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
         .then(res => res.json())
         .then(data => {
           console.log({data});
