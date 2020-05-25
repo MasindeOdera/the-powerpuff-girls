@@ -18,8 +18,8 @@ function App() {
         </header>
         <Navigation />
         <Switch>
-          <Route exact path="/" component={Main} />
-          <Route path="/episodes" component={EpisodeList} />
+          <Route exact path="/the-powerpuff-girls" component={Main} />
+          <Route path="/the-powerpuff-girls/episodes" component={EpisodeList} />
         </Switch>
       </BrowserRouter>
     </div>
