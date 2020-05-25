@@ -1,9 +1,8 @@
 
 const initialState = {
     counter: 0,
-    info: "Hello World!",
-    description: "Not a lot options on the horizon, but you never know...",
     initialData: {},
+    list: [],
 }
 
 function rootReducer(state = initialState, action){
@@ -24,6 +23,11 @@ function rootReducer(state = initialState, action){
                 ...state,
                 initialData: action.payload,
              }
+        case 'LIST':
+        return { 
+            ...state,
+            list: action.payload,
+            }
         default:
             return state;
     }

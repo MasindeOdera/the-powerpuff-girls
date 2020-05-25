@@ -7,19 +7,18 @@ import './Main.scss';
 function Main() {
     const [initialData, setInitialData] = useState('');
     const dispatch = useDispatch();
+    //https://api.tvmaze.com/singlesearch/shows?q=the-powerpuff-girls
 
     useEffect(() => {
-      fetch('https://api.tvmaze.com/singlesearch/shows?q=the-powerpuff-girls')
+      fetch('http://api.tvmaze.com/shows/6771?embed=episodes')
         .then(res => res.json())
         .then(data => {
           console.log({data});
           setInitialData(data);
+          dispatch({type:"DISPLAY", payload: data})
+          dispatch({type:"LIST", payload: data._embedded.episodes});
         });
-    }, []);
-  
-    useEffect(() => {
-      dispatch({type:"DISPLAY", payload: initialData})
-    });
+    }, [dispatch]);
 
     // Get the image from the data.
     const image = useSelector( (state) => state.initialData.image);
