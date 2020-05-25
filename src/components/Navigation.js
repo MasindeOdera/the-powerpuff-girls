@@ -8,7 +8,7 @@ function Navigation() {
     
     return (
         <div className="Navigation">
-            <button><NavLink to="/" activeClassName="button:hover"><b>Main</b></NavLink></button>
+            <button><NavLink to="/" activeClassName="button:hover" exact={true}><b>Main</b></NavLink></button>
             <button><NavLink to="/episodes" activeClassName="button:hover"><b>Episodes</b></NavLink></button>
         </div>
     )
