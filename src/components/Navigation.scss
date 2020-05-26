@@ -1,23 +1,26 @@
 @import "../Shared.scss";
 
 .Navigation {
-    button {
-        background-color: $primaryBackgroundColor;
-        border: 1px solid $primaryBackgroundColorHover;
-        font-size: calc(10px + 2vmin);
-        padding: 4px 8px;
-        cursor: pointer;
-        float: left;
-        a:link, a:visited, a:active {
-            text-decoration: none;
-            color: white !important;
+    a:link, a:visited, a:active {
+        text-decoration: none;
+        color: white !important;
+        button {
+            background-color: $primaryBackgroundColor;
+            border: 1px solid $primaryBackgroundColorHover;
+            font-size: calc(10px + 2vmin);
+            padding: 4px 8px;
+            cursor: pointer;
+            float: left;
+            b {
+                color: white;
+            }
         }
-    }
-    button:not(:last-child) {
-        border-right: none;
-    }
-    button:hover {
-        background-color:  $primaryBackgroundColorHover; //Add a background color on hover
+        button:not(:last-child) {
+            border-right: none;
+        }
+        button:hover, button:active {
+            background-color:  $primaryBackgroundColorHover; //Add a background color on hover
+        }
     }
 }
   
