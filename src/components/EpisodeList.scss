@@ -1,2 +1,55 @@
 @import "../Shared.scss";
 
+table {
+    display: grid;
+    border-collapse: collapse;
+    max-width: 600px;
+    grid-template-columns: 
+    minmax(26%, 1.67fr)
+    minmax(40%, 4.33fr)
+    minmax(34%, 1.67fr)
+  }
+
+thead, tbody, tr {
+    display: contents;
+}
+
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: $primaryBackgroundColor;
+    text-align: left;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+    overflow: hidden;
+    text-overflow: clip; 
+    white-space: nowrap;
+}
+
+th:last-child {
+    border: 0;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $primaryBackgroundColor;
+}
+
+.Season tr:nth-child(even) td {
+    background: $tableWhite;
+}
+
+.Season tr:nth-child(odd) td {
+    background: $tableShade;
+}

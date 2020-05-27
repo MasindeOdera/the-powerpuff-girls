@@ -25,16 +25,21 @@ function EpisodeList() {
     console.log({secondEpisodes});
     console.log({thirdEpisodes});
 
-    const name = firstEpisodes.map(firstEpisode => {
-        return <tr key={firstEpisode.number}><td>{firstEpisode.name}</td></tr>;
+    //In the thead, there are 2 empty th tags due to the 3 parts of thetable grid. 
+    const firstHeader = <thead><tr><th><b>Season: 1</b></th><th></th><th></th></tr></thead>;
+    const firstContent = firstEpisodes.map(firstEpisode => {
+        return <tr key={firstEpisode.number}><td>{firstEpisode.season}x{firstEpisode.number}</td><td>{firstEpisode.name}</td><td>{firstEpisode.airdate}</td></tr>;
     });
 
     return (
         <div>
             <h2>EpisodeList</h2>
             <div></div>
-            <table>
-                <tbody>{name}</tbody>
+            <table className="Season">
+                {firstHeader}
+                <tbody>
+                    {firstContent}
+                </tbody>
             </table>
         </div>
     )
