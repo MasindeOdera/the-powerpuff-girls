@@ -1,5 +1,19 @@
 @import "../Shared.scss";
 
+.View-season {
+    display: inline-block;
+    .Seasons-number {
+        a {
+            color: white;
+            padding: 4px;
+            @include button-style;
+        }
+        a:hover, a:active {
+            background-color:  $primaryBackgroundColorHover; //Add a background color on hover
+        }
+    }
+}
+
 table {
     display: grid;
     border-collapse: collapse;

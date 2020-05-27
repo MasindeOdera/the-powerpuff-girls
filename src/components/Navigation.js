@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 import './Navigation.scss';
 
 function Navigation() {
-    // const state = useSelector( (state) => state);
-    // const dispatch = useDispatch();
     
     return (
         <div className="Navigation">

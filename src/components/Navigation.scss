@@ -5,12 +5,7 @@
         text-decoration: none;
         color: white !important;
         button {
-            background-color: $primaryBackgroundColor;
-            border: 1px solid $primaryBackgroundColorHover;
-            font-size: calc(10px + 2vmin);
-            padding: 4px 8px;
-            cursor: pointer;
-            float: left;
+            @include button-style;
             b {
                 color: white;
             }

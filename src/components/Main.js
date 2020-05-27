@@ -5,27 +5,10 @@ import placeholder from '../images/placeholder.png';
 import './Main.scss';
 
 function Main() {
-    // const [initialData, setInitialData] = useState('');
-    // const dispatch = useDispatch();
-    //https://api.tvmaze.com/singlesearch/shows?q=the-powerpuff-girls
-
-    // useEffect(() => {
-    //   fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
-    //     .then(res => res.json())
-    //     .then(data => {
-    //       console.log({data});
-    //       setInitialData(data);
-    //       dispatch({type:"DISPLAY", payload: data})
-    //       dispatch({type:"LIST", payload: data._embedded.episodes});
-    //     });
-    // }, [dispatch]);
-
 
     // Get the image from the data.
     const image = useSelector( (state) => state.initialData.image);
     const summary = useSelector( (state) => state.initialData.summary);
-    // const data = useSelector( (state) => state.initialData);
-    // setInitialData(data);
 
     return (
         <div className="Main">
