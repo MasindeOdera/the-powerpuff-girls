@@ -7,28 +7,35 @@ function EpisodeList() {
     // const [first, setFirst] = useState([]);
     // const [firstSeason, setfirstSeason] = useState([]);
     let episodes = state.list;
-    let first, second, third;
+    let firstEpisodes, secondEpisodes, thirdEpisodes;
     if(episodes) {
-        first = episodes.filter(function(episode) {
+        firstEpisodes = episodes.filter(function(episode) {
             return episode.season === 1;
         });
 
-        second = episodes.filter(function(episode) {
+        secondEpisodes = episodes.filter(function(episode) {
             return episode.season === 2;
         });
 
-        third = episodes.filter(function(episode) {
+        thirdEpisodes = episodes.filter(function(episode) {
             return episode.season === 3;
         });
     }
-    console.log({first});
-    console.log({second});
-    console.log({third});
+    console.log({firstEpisodes});
+    console.log({secondEpisodes});
+    console.log({thirdEpisodes});
 
+    const name = firstEpisodes.map(firstEpisode => {
+        return <tr key={firstEpisode.number}><td>{firstEpisode.name}</td></tr>;
+    });
 
     return (
         <div>
             <h2>EpisodeList</h2>
+            <div></div>
+            <table>
+                <tbody>{name}</tbody>
+            </table>
         </div>
     )
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import PathHeader from './components/PathHeader';
 import Navigation from './components/Navigation';
 import Main from './components/Main';
@@ -8,6 +9,20 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 
 function App() {
+  const [initialData, setInitialData] = useState('');
+  const dispatch = useDispatch();
+  console.log(initialData);
+
+  useEffect(() => {
+    fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
+      .then(res => res.json())
+      .then(data => {
+        console.log({data});
+        setInitialData(data);
+        dispatch({type:"DISPLAY", payload: data})
+        dispatch({type:"LIST", payload: data._embedded.episodes});
+      });
+  }, [dispatch]);
 
   return (
     <div className="App">
