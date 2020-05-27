@@ -4,6 +4,7 @@ import PathHeader from './components/PathHeader';
 import Navigation from './components/Navigation';
 import Main from './components/Main';
 import EpisodeList from './components/EpisodeList';
+import EpisodeDetail from './components/EpisodeDetail';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.scss';
@@ -35,6 +36,7 @@ function App() {
         <Switch>
           <Route exact path="/the-powerpuff-girls" component={Main} />
           <Route path="/the-powerpuff-girls/episodes" component={EpisodeList} />
+          <Route path="/the-powerpuff-girls/detail" component={EpisodeDetail} />
         </Switch>
       </BrowserRouter>
     </div>

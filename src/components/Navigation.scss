@@ -3,11 +3,11 @@
 .Navigation {
     a:link, a:visited, a:active {
         text-decoration: none;
-        color: white !important;
+        color: $tableWhite !important;
         button {
             @include button-style;
             b {
-                color: white;
+                color: $tableWhite;
             }
         }
         button:not(:last-child) {

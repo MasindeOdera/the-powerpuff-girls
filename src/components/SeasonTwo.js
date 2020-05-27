@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import './EpisodeList.scss';
 
 function SeasonTwo() {
@@ -16,9 +17,13 @@ function SeasonTwo() {
     //In the thead, there are 2 empty th tags due to the 3 parts of thetable grid. 
     const secondHeader = <thead><tr><th><b>Season: 2</b></th><th></th><th></th></tr></thead>;
     const secondContent = secondEpisodes.map(secondEpisode => {
-        return <tr key={secondEpisode.number}>
+        return <tr key={secondEpisode.id}>
             <td>{secondEpisode.season}x{secondEpisode.number}</td>
-            <td>{secondEpisode.name}</td>
+            <td>
+                <Link to={"/the-powerpuff-girls/detail"} id={secondEpisode.id}>
+                    {secondEpisode.name}
+                </Link>
+            </td>
             <td>{secondEpisode.airdate}</td>
         </tr>;
     });

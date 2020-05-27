@@ -4,7 +4,7 @@
     display: inline-block;
     .Seasons-number {
         a {
-            color: white;
+            color: $tableWhite;
             padding: 4px;
             @include button-style;
         }
@@ -21,43 +21,44 @@ table {
     grid-template-columns: 
     minmax(26%, 1.67fr)
     minmax(40%, 4.33fr)
-    minmax(34%, 1.67fr)
+    minmax(34%, 1.67fr);
+    thead {
+        tr {
+            th {
+                position: sticky;
+                top: 0;
+                background: $primaryBackgroundColor;
+                text-align: left;
+                padding: 10px;
+                font-weight: normal;
+                font-size: 1.1rem;
+                color: $tableWhite;
+                overflow: hidden;
+                text-overflow: clip; 
+                white-space: nowrap;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                padding: 10px 15px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                text-align: left;
+                color: $primaryBackgroundColor;
+            }
+        }
+    }
   }
 
 thead, tbody, tr {
     display: contents;
 }
 
-td {
-    padding: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-align: left;
-}
-
-th {
-    position: sticky;
-    top: 0;
-    background: $primaryBackgroundColor;
-    text-align: left;
-    padding: 10px;
-    font-weight: normal;
-    font-size: 1.1rem;
-    color: white;
-    overflow: hidden;
-    text-overflow: clip; 
-    white-space: nowrap;
-}
-
 th:last-child {
     border: 0;
-}
-
-td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: $primaryBackgroundColor;
 }
 
 .Season tr:nth-child(even) td {
