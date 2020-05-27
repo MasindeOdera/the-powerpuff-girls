@@ -20,7 +20,7 @@ function SeasonTwo() {
         return <tr key={secondEpisode.id}>
             <td>{secondEpisode.season}x{secondEpisode.number}</td>
             <td>
-                <Link to={"/the-powerpuff-girls/detail"} id={secondEpisode.id}>
+                <Link to={"/the-powerpuff-girls/detail/" + secondEpisode.id} >
                     {secondEpisode.name}
                 </Link>
             </td>

@@ -20,7 +20,7 @@ function App() {
       .then(data => {
         console.log({data});
         setInitialData(data);
-        dispatch({type:"DISPLAY", payload: data})
+        dispatch({type:"DISPLAY", payload: data});
         dispatch({type:"LIST", payload: data._embedded.episodes});
       });
   }, [dispatch]);
@@ -36,7 +36,7 @@ function App() {
         <Switch>
           <Route exact path="/the-powerpuff-girls" component={Main} />
           <Route path="/the-powerpuff-girls/episodes" component={EpisodeList} />
-          <Route path="/the-powerpuff-girls/detail" component={EpisodeDetail} />
+          <Route path="/the-powerpuff-girls/detail/:id" component={EpisodeDetail} />
         </Switch>
       </BrowserRouter>
     </div>

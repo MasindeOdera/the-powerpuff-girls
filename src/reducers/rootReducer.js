@@ -2,7 +2,6 @@
 const initialState = {
     initialData: {},
     list: [],
-    firstSeason: [],
 }
 
 function rootReducer(state = initialState, action){
@@ -17,11 +16,6 @@ function rootReducer(state = initialState, action){
             return { 
                 ...state,
                 list: action.payload,
-            }
-        case 'SEASON1':
-            return {
-                ...state,
-                firstSeason: action.payload,
             }
         default:
             return state;

@@ -13,6 +13,7 @@ function SeasonThree() {
             return episode.season === 3;
         });
     }
+    console.log(episodes);
 
     //In the thead, there are 2 empty th tags due to the 3 parts of thetable grid. 
     const thirdHeader = <thead><tr><th><b>Season: 3</b></th><th></th><th></th></tr></thead>;
@@ -20,7 +21,7 @@ function SeasonThree() {
         return <tr key={thirdEpisode.id}>
             <td>{thirdEpisode.season}x{thirdEpisode.number}</td>
             <td>
-                <Link to={"/the-powerpuff-girls/detail"} id={thirdEpisode.id}>
+                <Link to={"/the-powerpuff-girls/detail/" + thirdEpisode.id} >
                     {thirdEpisode.name}
                 </Link>
             </td>
