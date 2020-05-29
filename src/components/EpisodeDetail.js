@@ -17,6 +17,7 @@ function EpisodeDetail(detail) {
         });
     }
 
+    //Locating correct title for selected show and displaying error message if missing
     title = episodeDetail.map(detail => {
         if(detail.name !== null){
             return detail.name;
@@ -26,6 +27,7 @@ function EpisodeDetail(detail) {
         }
     });
 
+    //Assigning summary for selected show and displaying error message if missing
     summary = episodeDetail.map(detail => {
         if(detail.summary !== null){
             return detail.summary;
@@ -35,9 +37,10 @@ function EpisodeDetail(detail) {
         }
     });
 
+    //Assigning summary for selected show and displaying error message if missing
     image = episodeDetail.map(detail => {
         if(detail.image === null || undefined){
-            return undefined;
+            return '';
         }
         else {
             return detail.image;

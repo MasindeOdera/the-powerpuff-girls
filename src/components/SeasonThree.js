@@ -13,7 +13,6 @@ function SeasonThree() {
             return episode.season === 3;
         });
     }
-    console.log(episodes);
 
     //In the thead, there are 2 empty th tags due to the 3 parts of thetable grid. 
     const thirdHeader = <thead><tr><th><b>Season: 3</b></th><th></th><th></th></tr></thead>;
