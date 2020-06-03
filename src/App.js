@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import PathHeader from './components/PathHeader';
 import Navigation from './components/Navigation';
@@ -12,22 +12,27 @@ import './App.scss';
 
 function App() {
   // eslint-disable-next-line 
-  const [initialData, setInitialData] = useState('');
+  const [initialData, setInitialData] = useState([]);
+  const [error, setError] = useState('');
   const dispatch = useDispatch();
   
   //Keeping an eye on how many times this component renders in the console.
   useCountRenders();
 
+  const fetchShows = useCallback(() => {
+    fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
+	.then(res => res.json())
+	.then(data => {
+	  setInitialData(data);
+	  dispatch({type:"DISPLAY", payload: data});
+	  dispatch({type:"LIST", payload: data._embedded.episodes});
+	})
+	.catch(error => setError(error.message));
+  }, [dispatch, setInitialData, setError]);
+
   useEffect(() => {
-	fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
-	  .then(res => res.json())
-	  .then(data => {
-		setInitialData(data);
-		dispatch({type:"DISPLAY", payload: data});
-		dispatch({type:"LIST", payload: data._embedded.episodes});
-	  })
-	  .catch(error => console.log(error));
-  }, [dispatch]);
+	  fetchShows();
+  }, [fetchShows]);
 
   return (
 	<div className="App">
@@ -37,6 +42,7 @@ function App() {
 		  <h1>The Powerpuff Girls</h1>
 		</header>
 		<Navigation />
+		<h3 className="Error-message">{ error }</h3>
 		<Switch>
 		  <Route exact path="/the-powerpuff-girls" component={Main} />
 		  <Route path="/the-powerpuff-girls/episodes" component={EpisodeList} />
