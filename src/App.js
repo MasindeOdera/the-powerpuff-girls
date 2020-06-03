@@ -17,7 +17,7 @@ function App() {
   const dispatch = useDispatch();
   
   //Keeping an eye on how many times this component renders in the console.
-  useCountRenders();
+  useCountRenders(); 
 
   const fetchShows = useCallback(() => {
     fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
