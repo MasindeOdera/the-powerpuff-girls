@@ -14,21 +14,24 @@ function App() {
   // eslint-disable-next-line 
   const [initialData, setInitialData] = useState([]);
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
   
   //Keeping an eye on how many times this component renders in the console.
   useCountRenders(); 
 
   const fetchShows = useCallback(() => {
-    fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
-	.then(res => res.json())
-	.then(data => {
-	  setInitialData(data);
-	  dispatch({type:"DISPLAY", payload: data});
-	  dispatch({type:"LIST", payload: data._embedded.episodes});
-	})
-	.catch(error => setError(error.message));
-  }, [dispatch, setInitialData, setError]);
+	  setLoading(true);
+	  fetch('https://api.tvmaze.com/shows/6771?embed=episodes')
+	  	.then(res => res.json())
+		.then(data => {
+		setInitialData(data);
+		setLoading(false);
+	  	dispatch({type:"DISPLAY", payload: data});
+	  	dispatch({type:"LIST", payload: data._embedded.episodes});
+		})
+		.catch(error => setError(error.message));
+  }, [dispatch, setInitialData, setError, setLoading]);
 
   useEffect(() => {
 	  fetchShows();
@@ -42,7 +45,8 @@ function App() {
 		  <h1>The Powerpuff Girls</h1>
 		</header>
 		<Navigation />
-		<h3 className="Error-message">{ error }</h3>
+		{ error ? <h3 className="Error-message">{ error }</h3> : null }
+		{ loading ? <h1>Loading...</h1> : null}
 		<Switch>
 		  <Route exact path="/the-powerpuff-girls" component={Main} />
 		  <Route path="/the-powerpuff-girls/episodes" component={EpisodeList} />
