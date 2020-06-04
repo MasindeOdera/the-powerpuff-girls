@@ -9,7 +9,7 @@ function EpisodeDetail(detail) {
     //I need to convert the id back into an integer before using it compare with other integers.
     let id = parseInt(detail.match.params.id);
     let shows = state.list;
-    let episodeDetail, title, summary, image, img;
+    let episodeDetail, title, summary, image, when, img;
 
     if(shows) {
         episodeDetail = shows.filter(function(show) {
@@ -25,6 +25,11 @@ function EpisodeDetail(detail) {
         else {
             return <h4>No title provided</h4>;
         }
+    });
+
+    //Adding the Season & Episode number
+    when = episodeDetail.map(detail => {
+        return detail.season + "x" + detail.number;
     });
 
     //Assigning summary for selected show and displaying error message if missing
@@ -56,11 +61,11 @@ function EpisodeDetail(detail) {
         }
      });
 
-     const coverImage = image !== undefined ? cover : placeholder;
+    const coverImage = image !== undefined ? cover : placeholder;
 
     return (
         <Fragment>
-            <h1>Title: {title}</h1>
+            <h1>Title: {title} ({ when })</h1>
             <img src={coverImage} alt="img" />
             <div dangerouslySetInnerHTML={{ __html: summary }} />
             
