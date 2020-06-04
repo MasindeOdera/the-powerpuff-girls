@@ -5,7 +5,6 @@ import placeholder from '../images/placeholder.png';
 function EpisodeDetail(detail) {
     const state = useSelector( (state) => state);
 
-
     //I need to convert the id back into an integer before using it compare with other integers.
     let id = parseInt(detail.match.params.id);
     let shows = state.list;
