@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/the-powerpuff-girls/static/css/main.12a98f9a.chunk.css",
-    "main.js": "/the-powerpuff-girls/static/js/main.f6cf07c8.chunk.js",
-    "main.js.map": "/the-powerpuff-girls/static/js/main.f6cf07c8.chunk.js.map",
+    "main.js": "/the-powerpuff-girls/static/js/main.0d33a172.chunk.js",
+    "main.js.map": "/the-powerpuff-girls/static/js/main.0d33a172.chunk.js.map",
     "runtime-main.js": "/the-powerpuff-girls/static/js/runtime-main.29c1325a.js",
     "runtime-main.js.map": "/the-powerpuff-girls/static/js/runtime-main.29c1325a.js.map",
     "static/css/2.fc7d3ea1.chunk.css": "/the-powerpuff-girls/static/css/2.fc7d3ea1.chunk.css",
     "static/js/2.9165cc53.chunk.js": "/the-powerpuff-girls/static/js/2.9165cc53.chunk.js",
     "static/js/2.9165cc53.chunk.js.map": "/the-powerpuff-girls/static/js/2.9165cc53.chunk.js.map",
     "index.html": "/the-powerpuff-girls/index.html",
-    "precache-manifest.13cf191ba64a1374b04b733bb0cae2a3.js": "/the-powerpuff-girls/precache-manifest.13cf191ba64a1374b04b733bb0cae2a3.js",
+    "precache-manifest.0d77accc1852e7142ebfaf1b9005230a.js": "/the-powerpuff-girls/precache-manifest.0d77accc1852e7142ebfaf1b9005230a.js",
     "service-worker.js": "/the-powerpuff-girls/service-worker.js",
     "static/css/2.fc7d3ea1.chunk.css.map": "/the-powerpuff-girls/static/css/2.fc7d3ea1.chunk.css.map",
     "static/css/main.12a98f9a.chunk.css.map": "/the-powerpuff-girls/static/css/main.12a98f9a.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.fc7d3ea1.chunk.css",
     "static/js/2.9165cc53.chunk.js",
     "static/css/main.12a98f9a.chunk.css",
-    "static/js/main.f6cf07c8.chunk.js"
+    "static/js/main.0d33a172.chunk.js"
   ]
 }
